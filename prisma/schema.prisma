@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["tracing"]
 }
 
 datasource db {
@@ -12,5 +11,5 @@ model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
   // To trigger the blob storage recommendation
-  binary Bytes
+  image String
 }
